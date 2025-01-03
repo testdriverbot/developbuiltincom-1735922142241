@@ -1,0 +1,28 @@
+version: 4.1.32
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: Click on the "LOG IN" link.
+    commands:
+      - command: hover-text
+        text: LOG IN
+        description: log in link in the top right of the header
+        action: click
+  - prompt: Fill in the login form with valid credentials.
+    commands:
+      - command: hover-text
+        text: LOG IN
+        description: log in link in the top right of the header
+        action: click
+      - command: hover-text
+        text: LOG IN
+        description: log in link in the top right of the header
+        action: click
+      - command: type
+        text: test@example.com
+      - command: hover-text
+        text: Password
+        description: password input field in the login form
+        action: click
